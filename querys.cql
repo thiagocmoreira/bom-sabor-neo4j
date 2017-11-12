@@ -203,6 +203,26 @@ CREATE (MariaEduarda:ASSOCIADO {
 })
 CREATE (MariaEduarda)-[:CONTRATA { data_inicial: '2017-09-10', vencimento: 10 }]->(PlanoTrimestral)
 
+// Natural De
+CREATE (MatheusNicolas)-[:NATURAL_DE]->(Brasilia)
+CREATE (TomasOtavio)-[:NATURAL_DE]->(Blumenau)
+CREATE (SarahFernanda)-[:NATURAL_DE]->(Brasilia)
+CREATE (MariaEduarda)-[:NATURAL_DE]->(BragancaPaulista)
+
+// Mora em
+CREATE (MatheusNicolas)-[:MORA_EM]->(EQNOBlocoC)
+CREATE (TomasOtavio)-[:MORA_EM]->(RuaAlbertSchulz)
+CREATE (SarahFernanda)-[:MORA_EM]->(Quadra13Conjunto7)
+CREATE (MariaEduarda)-[:MORA_EM]->(PracaManoelRamosdeLima)
+
+// Contato
+CREATE (MatheusNicolas)-[:CONTATO]->(telDF1)
+CREATE (TomasOtavio)-[:CONTATO]->(telSC1)
+CREATE (TomasOtavio)-[:CONTATO]->(telSC2)
+CREATE (SarahFernanda)-[:CONTATO]->(telDF2)
+CREATE (MariaEduarda)-[:CONTATO]->(telSP1)
+CREATE (MariaEduarda)-[:CONTATO]->(telSP2)
+
 
 // Alimentos
 CREATE (maca:ALIMENTO { nome: 'Maçã', tipo: 'fruta' })
