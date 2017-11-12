@@ -316,75 +316,72 @@ CREATE (MariaEduarda)-[:CONTATO]->(telSP2)
 -- Mensalidade --
 CREATE (mensalidade1_matheusNicolas:MENSALIDADE:PAGA { vencimento: '2017-05-20' })
 CREATE (mensalidade1_matheusNicolas)-[:DO_PLANO]->(plano_anual)
-CREATE (matheusNicolas)-[:PAGOU { data: '' }]->(mensalidade1_matheusNicolas)
+CREATE (matheusNicolas)-[:PAGOU { data: '2017-05-19' }]->(mensalidade1_matheusNicolas)
 
 CREATE (mensalidade2_matheusNicolas:MENSALIDADE:PAGA { vencimento: '2017-06-20' })
 CREATE (mensalidade2_matheusNicolas)-[:DO_PLANO]->(plano_anual)
-CREATE (matheusNicolas)-[:PAGOU { data: '' }]->(mensalidade2_matheusNicolas)
+CREATE (matheusNicolas)-[:PAGOU { data: '2017-06-20' }]->(mensalidade2_matheusNicolas)
 
 CREATE (mensalidade3_matheusNicolas:MENSALIDADE:PAGA { vencimento: '2017-07-20' })
 CREATE (mensalidade3_matheusNicolas)-[:DO_PLANO]->(plano_anual)
-CREATE (matheusNicolas)-[:PAGOU { data: '' }]->(mensalidade3_matheusNicolas)
+CREATE (matheusNicolas)-[:PAGOU { data: '2017-07-19' }]->(mensalidade3_matheusNicolas)
 
 CREATE (mensalidade4_matheusNicolas:MENSALIDADE:PAGA { vencimento: '2017-09-20' })
 CREATE (mensalidade4_matheusNicolas)-[:DO_PLANO]->(plano_anual)
-CREATE (matheusNicolas)-[:PAGOU { data: '' }]->(mensalidade4_matheusNicolas)
+CREATE (matheusNicolas)-[:PAGOU { data: '2017-09-20' }]->(mensalidade4_matheusNicolas)
 
 CREATE (mensalidade5_matheusNicolas:MENSALIDADE:PAGA { vencimento: '2017-10-20' })
 CREATE (mensalidade5_matheusNicolas)-[:DO_PLANO]->(plano_anual)
-CREATE (matheusNicolas)-[:PAGOU { data: '' }]->(mensalidade5_matheusNicolas)
+CREATE (matheusNicolas)-[:PAGOU { data: '2017-10-18' }]->(mensalidade5_matheusNicolas)
 
 CREATE (mensalidade6_matheusNicolas:MENSALIDADE:NAO_PAGA { vencimento: '2017-11-20' })
 CREATE (mensalidade6_matheusNicolas)-[:DO_PLANO]->(plano_anual)
-CREATE (matheusNicolas)-[:PAGOU { data: '' }]->(mensalidade6_matheusNicolas)
 
 CREATE (mensalidade1_TomasOtavio:MENSALIDADE:PAGA { vencimento: '2017-06-16' })
 CREATE (mensalidade1_TomasOtavio)-[:DO_PLANO]->(plano_anual)
-CREATE (TomasOtavio)-[:PAGOU { data: '' }]->(mensalidade1_TomasOtavio)
+CREATE (TomasOtavio)-[:PAGOU { data: '2017-06-16' }]->(mensalidade1_TomasOtavio)
 
 CREATE (mensalidade2_TomasOtavio:MENSALIDADE:PAGA { vencimento: '2017-08-16' })
 CREATE (mensalidade2_TomasOtavio)-[:DO_PLANO]->(plano_anual)
-CREATE (TomasOtavio)-[:PAGOU { data: '' }]->(mensalidade2_TomasOtavio)
+CREATE (TomasOtavio)-[:PAGOU { data: '2017-08-15' }]->(mensalidade2_TomasOtavio)
 
 CREATE (mensalidade3_TomasOtavio:MENSALIDADE:PAGA { vencimento: '2017-09-16' })
 CREATE (mensalidade3_TomasOtavio)-[:DO_PLANO]->(plano_anual)
-CREATE (TomasOtavio)-[:PAGOU { data: '' }]->(mensalidade3_TomasOtavio)
+CREATE (TomasOtavio)-[:PAGOU { data: '2017-09-15' }]->(mensalidade3_TomasOtavio)
 
 CREATE (mensalidade4_TomasOtavio:MENSALIDADE:PAGA { vencimento: '2017-10-16' })
 CREATE (mensalidade4_TomasOtavio)-[:DO_PLANO]->(plano_anual)
-CREATE (TomasOtavio)-[:PAGOU { data: '' }]->(mensalidade4_TomasOtavio)
+CREATE (TomasOtavio)-[:PAGOU { data: '2017-10-16' }]->(mensalidade4_TomasOtavio)
 
 CREATE (mensalidade5_TomasOtavio:MENSALIDADE:NAO_PAGA { vencimento: '2017-11-16' })
 CREATE (mensalidade5_TomasOtavio)-[:DO_PLANO]->(plano_anual)
-CREATE (TomasOtavio)-[:PAGOU { data: '' }]->(mensalidade5_TomasOtavio)
 
 CREATE (mensalidade1_SarahFernanda:MENSALIDADE:PAGA { vencimento: '2017-08-15' })
 CREATE (mensalidade1_SarahFernanda)-[:DO_PLANO]->(plano_semestral)
-CREATE (SarahFernanda)-[:PAGOU { data: '' }]->(mensalidade1_SarahFernanda)
+CREATE (SarahFernanda)-[:PAGOU { data: '2017-08-15' }]->(mensalidade1_SarahFernanda)
 
 CREATE (mensalidade2_SarahFernanda:MENSALIDADE:PAGA { vencimento: '2017-09-15' })
 CREATE (mensalidade2_SarahFernanda)-[:DO_PLANO]->(plano_semestral)
-CREATE (SarahFernanda)-[:PAGOU { data: '' }]->(mensalidade2_SarahFernanda)
+CREATE (SarahFernanda)-[:PAGOU { data: '2017-09-15' }]->(mensalidade2_SarahFernanda)
 
 CREATE (mensalidade3_SarahFernanda:MENSALIDADE:PAGA { vencimento: '2017-10-15' })
 CREATE (mensalidade3_SarahFernanda)-[:DO_PLANO]->(plano_semestral)
-CREATE (SarahFernanda)-[:PAGOU { data: '' }]->(mensalidade3_SarahFernanda)
+CREATE (SarahFernanda)-[:PAGOU { data: '2017-10-14' }]->(mensalidade3_SarahFernanda)
 
 CREATE (mensalidade4_SarahFernanda:MENSALIDADE:NAO_PAGA { vencimento: '2017-11-15' })
 CREATE (mensalidade4_SarahFernanda)-[:DO_PLANO]->(plano_semestral)
-CREATE (SarahFernanda)-[:PAGOU { data: '' }]->(mensalidade4_SarahFernanda)
 
 CREATE (mensalidade1_MariaEduarda:MENSALIDADE:PAGA { vencimento: '2017-09-10' })
 CREATE (mensalidade1_MariaEduarda)-[:DO_PLANO]->(plano_trimestral)
-CREATE (MariaEduarda)-[:PAGOU { data: '' }]->(mensalidade1_MariaEduarda)
+CREATE (MariaEduarda)-[:PAGOU { data: '2017-09-10' }]->(mensalidade1_MariaEduarda)
 
 CREATE (mensalidade2_MariaEduarda:MENSALIDADE:PAGA { vencimento: '2017-10-10' })
 CREATE (mensalidade2_MariaEduarda)-[:DO_PLANO]->(plano_trimestral)
-CREATE (MariaEduarda)-[:PAGOU { data: '' }]->(mensalidade2_MariaEduarda)
+CREATE (MariaEduarda)-[:PAGOU { data: '2017-10-09' }]->(mensalidade2_MariaEduarda)
 
 CREATE (mensalidade3_MariaEduarda:MENSALIDADE:PAGA { vencimento: '2017-11-10' })
 CREATE (mensalidade3_MariaEduarda)-[:DO_PLANO]->(plano_trimestral)
-CREATE (MariaEduarda)-[:PAGOU { data: '' }]->(mensalidade3_MariaEduarda)
+CREATE (MariaEduarda)-[:PAGOU { data: '2017-11-09' }]->(mensalidade3_MariaEduarda)
 
 
 
@@ -457,74 +454,259 @@ CREATE (BomSabor)-[:CONTRATA { data_de_contrato: '2017-09-25' }]->(citricola_luc
 
 
 -- Encomendas --
-CREATE (encomenda1_seara:ENCOMENDA { data: '2017-08-20' })
-CREATE (encomenda1_seara)-[:CONTEMPLA]->(lista_de_compra1_matheusNicolas)
+CREATE (encomenda1:ENCOMENDA { data: '2017-08-20' })
+CREATE (encomenda1)-[:CONTEMPLA]->(lista_de_compra1_matheusNicolas)
 
-CREATE (encomenda1_brasnica:ENCOMENDA { data: '2017-09-25' })
-CREATE (encomenda1_brasnica)-[:CONTEMPLA]->(lista_de_compra1_TomasOtavio)
+CREATE (encomenda2:ENCOMENDA { data: '2017-09-25' })
+CREATE (encomenda2)-[:CONTEMPLA]->(lista_de_compra1_TomasOtavio)
 
-CREATE (encomenda1_copeagro:ENCOMENDA { data: '2017-10-10' })
-CREATE (encomenda1_copeagro)-[:CONTEMPLA]->(lista_de_compra1_SarahFernanda)
+CREATE (encomenda3:ENCOMENDA { data: '2017-10-10' })
+CREATE (encomenda3)-[:CONTEMPLA]->(lista_de_compra1_SarahFernanda)
 
-CREATE (encomenda2_copeagro:ENCOMENDA { data: '2017-10-20' })
-CREATE (encomenda2_copeagro)-[:CONTEMPLA]->(lista_de_compra2_SarahFernanda)
+CREATE (encomenda4:ENCOMENDA { data: '2017-10-20' })
+CREATE (encomenda4)-[:CONTEMPLA]->(lista_de_compra2_SarahFernanda)
 
-CREATE (encomenda2_seara:ENCOMENDA { data: '2017-10-20' })
-CREATE (encomenda2_seara)-[:CONTEMPLA]->(lista_de_compra2_SarahFernanda)
+CREATE (encomenda5:ENCOMENDA { data: '2017-11-10' })
+CREATE (encomenda5)-[:CONTEMPLA]->(lista_de_compra1_MariaEduarda)
+CREATE (encomenda5)-[:CONTEMPLA]->(lista_de_compra2_matheusNicolas)
+CREATE (encomenda5)-[:CONTEMPLA]->(lista_de_compra3_SarahFernanda)
 
-CREATE (encomenda3_seara:ENCOMENDA { data: '2017-11-10' })
-CREATE (encomenda3_seara)-[:CONTEMPLA]->(lista_de_compra3_SarahFernanda)
-CREATE (encomenda3_seara)-[:CONTEMPLA]->(lista_de_compra2_matheusNicolas)
-
-CREATE (encomenda1_citricola_lucato:ENCOMENDA { data: '2017-11-10' })
-CREATE (encomenda1_citricola_lucato)-[:CONTEMPLA]->(lista_de_compra3_SarahFernanda)
-CREATE (encomenda1_citricola_lucato)-[:CONTEMPLA]->(lista_de_compra1_MariaEduarda)
-
-CREATE (encomenda1_frutas_real:ENCOMENDA { data: '2017-11-10' })
-CREATE (encomenda1_frutas_real)-[:CONTEMPLA]->(lista_de_compra2_matheusNicolas)
+CREATE (BomSabor)-[:REALIZA]->(encomenda1)
+CREATE (BomSabor)-[:REALIZA]->(encomenda2)
+CREATE (BomSabor)-[:REALIZA]->(encomenda3)
+CREATE (BomSabor)-[:REALIZA]->(encomenda4)
+CREATE (BomSabor)-[:REALIZA]->(encomenda5)
 
 
 
 -- Alimentos de uma encomenda --
-CREATE(banana_encomenda1_seara:ALIMENTO_DA_ENCOMENDA { quantidade_total: 10 })
-CREATE(maca_encomenda1_seara:ALIMENTO_DA_ENCOMENDA { quantidade_total: 50 })
-CREATE(banana_encomenda2_seara:ALIMENTO_DA_ENCOMENDA { quantidade_total: 100 })
-CREATE(arroz_encomenda2_seara:ALIMENTO_DA_ENCOMENDA { quantidade_total: 20 })
-CREATE(melao_encomenda2_seara:ALIMENTO_DA_ENCOMENDA { quantidade_total: 50 })
-CREATE(cenoura_encomenda3_seara:ALIMENTO_DA_ENCOMENDA { quantidade_total: 200 })
-CREATE(cebola_encomenda3_seara:ALIMENTO_DA_ENCOMENDA { quantidade_total: 150 })
-CREATE(feijao_encomenda1_copeagro:ALIMENTO_DA_ENCOMENDA { quantidade_total: 30 })
-CREATE(couve_encomenda1_copeagro:ALIMENTO_DA_ENCOMENDA { quantidade_total: 50 })
-CREATE(morango_encomenda1_copeagro:ALIMENTO_DA_ENCOMENDA { quantidade_total: 100 })
-CREATE(melao_encomenda2_copeagro:ALIMENTO_DA_ENCOMENDA { quantidade_total: 80 })
-CREATE(batata_encomenda1_brasnica:ALIMENTO_DA_ENCOMENDA { quantidade_total: 100 })
-CREATE(tangerina_encomenda1_brasnica:ALIMENTO_DA_ENCOMENDA { quantidade_total: 80 })
-CREATE(milho_verde_encomenda1_frutas_real:ALIMENTO_DA_ENCOMENDA { quantidade_total: 10 })
-CREATE(tangerina_encomenda1_frutas_real:ALIMENTO_DA_ENCOMENDA { quantidade_total: 20 })
-CREATE(feijao_encomenda1_citricola_lucato:ALIMENTO_DA_ENCOMENDA { quantidade_total: 10 })
+CREATE(banana_encomenda1:ALIMENTO_DA_ENCOMENDA { quantidade_total: 10 })
+CREATE (banana_encomenda1)-[:DO_TIPO]->(banana)
+CREATE (banana_encomenda1)-[:PERTENCE { quantidade: 10 }]->(citricola_lucato)
 
+
+CREATE(maca_encomenda1:ALIMENTO_DA_ENCOMENDA { quantidade_total: 30 })
+CREATE (maca_encomenda1)-[:DO_TIPO]->(maca)
+CREATE (maca_encomenda1)-[:PERTENCE { quantidade: 30 }]->(citricola_lucato)
+
+CREATE(cenoura_encomenda1:ALIMENTO_DA_ENCOMENDA { quantidade_total: 12 })
+CREATE (cenoura_encomenda1)-[:DO_TIPO]->(cenoura)
+CREATE (cenoura_encomenda1)-[:PERTENCE { quantidade: 12 }]->(citricola_lucato)
+
+CREATE(cebola_encomenda1:ALIMENTO_DA_ENCOMENDA { quantidade_total: 15 })
+CREATE (cebola_encomenda1)-[:DO_TIPO]->(cebola)
+CREATE (cebola_encomenda1)-[:PERTENCE { quantidade: 15 }]->(citricola_lucato)
+
+CREATE(melao_encomenda2:ALIMENTO_DA_ENCOMENDA { quantidade_total: 50 })
+CREATE (melao_encomenda2)-[:DO_TIPO]->(melao)
+CREATE (melao_encomenda2)-[:PERTENCE { quantidade: 20 }]->(frutas_real)
+CREATE (melao_encomenda2)-[:PERTENCE { quantidade: 30 }]->(brasnica)
+
+CREATE(arroz_encomenda2:ALIMENTO_DA_ENCOMENDA { quantidade_total: 5 })
+CREATE (arroz_encomenda2)-[:DO_TIPO]->(arroz)
+CREATE (arroz_encomenda2)-[:PERTENCE { quantidade: 5 }]->(frutas_real)
+
+CREATE(batata_encomenda2:ALIMENTO_DA_ENCOMENDA { quantidade_total: 30 })
+CREATE (batata_encomenda2)-[:DO_TIPO]->(batata)
+CREATE (batata_encomenda2)-[:PERTENCE { quantidade: 30 }]->(brasnica)
+
+CREATE(feijao_encomenda2:ALIMENTO_DA_ENCOMENDA { quantidade_total: 8 })
+CREATE (feijao_encomenda2)-[:DO_TIPO]->(feijao)
+CREATE (feijao_encomenda2)-[:PERTENCE { quantidade: 8 }]->(frutas_real)
+
+CREATE(melao_encomenda3:ALIMENTO_DA_ENCOMENDA { quantidade_total: 30 })
+CREATE (melao_encomenda3)-[:DO_TIPO]->(melao)
+CREATE (melao_encomenda3)-[:PERTENCE { quantidade: 30 }]->(copeagro)
+
+CREATE(tangerina_encomenda3:ALIMENTO_DA_ENCOMENDA { quantidade_total: 40 })
+CREATE (tangerina_encomenda3)-[:DO_TIPO]->(tangerina)
+CREATE (tangerina_encomenda3)-[:PERTENCE { quantidade: 24 }]->(copeagro)
+CREATE (tangerina_encomenda3)-[:PERTENCE { quantidade: 26 }]->(brasnica)
+
+CREATE(morango_encomenda3:ALIMENTO_DA_ENCOMENDA { quantidade_total: 12 })
+CREATE (morango_encomenda3)-[:DO_TIPO]->(morango)
+CREATE (morango_encomenda3)-[:PERTENCE { quantidade: 12 }]->(brasnica)
+
+CREATE(uva_encomenda3:ALIMENTO_DA_ENCOMENDA { quantidade_total: 18 })
+CREATE (uva_encomenda3)-[:DO_TIPO]->(uva)
+CREATE (uva_encomenda3)-[:PERTENCE { quantidade: 18 }]->(copeagro)
+
+CREATE(couve_encomenda4:ALIMENTO_DA_ENCOMENDA { quantidade_total: 8 })
+CREATE (couve_encomenda4)-[:DO_TIPO]->(couve)
+CREATE (couve_encomenda4)-[:PERTENCE { quantidade: 8 }]->(brasnica)
+
+CREATE(arroz_encomenda4:ALIMENTO_DA_ENCOMENDA { quantidade_total: 22 })
+CREATE (arroz_encomenda4)-[:DO_TIPO]->(arroz)
+CREATE (arroz_encomenda4)-[:PERTENCE { quantidade: 22 }]->(copeagro)
+
+CREATE(melao_encomenda4:ALIMENTO_DA_ENCOMENDA { quantidade_total: 34 })
+CREATE (melao_encomenda4)-[:DO_TIPO]->(melao)
+CREATE (melao_encomenda4)-[:PERTENCE { quantidade: 30 }]->(seara)
+CREATE (melao_encomenda4)-[:PERTENCE { quantidade: 4 }]->(brasnica)
+
+CREATE(alface_encomenda4:ALIMENTO_DA_ENCOMENDA { quantidade_total: 10 })
+CREATE (alface_encomenda4)-[:DO_TIPO]->(alface)
+CREATE (alface_encomenda4)-[:PERTENCE { quantidade: 10 }]->(seara)
+
+CREATE(milho_verde_encomenda5:ALIMENTO_DA_ENCOMENDA { quantidade_total: 80 })
+CREATE (milho_verde_encomenda5)-[:DO_TIPO]->(milho_verde)
+CREATE (milho_verde_encomenda5)-[:PERTENCE { quantidade: 60 }]->(brasnica)
+CREATE (milho_verde_encomenda5)-[:PERTENCE { quantidade: 10 }]->(citricola_lucato)
+CREATE (milho_verde_encomenda5)-[:PERTENCE { quantidade: 10 }]->(seara)
+
+CREATE(feijao_encomenda5:ALIMENTO_DA_ENCOMENDA { quantidade_total: 20 })
+CREATE (feijao_encomenda5)-[:DO_TIPO]->(feijao)
+CREATE (feijao_encomenda5)-[:PERTENCE { quantidade: 20 }]->(seara)
+
+CREATE(arroz_encomenda5:ALIMENTO_DA_ENCOMENDA { quantidade_total: 58 })
+CREATE (arroz_encomenda5)-[:DO_TIPO]->(arroz)
+CREATE (arroz_encomenda5)-[:PERTENCE { quantidade: 40 }]->(frutas_real)
+CREATE (arroz_encomenda5)-[:PERTENCE { quantidade: 18 }]->(brasnica)
+
+CREATE(batata_encomenda5:ALIMENTO_DA_ENCOMENDA { quantidade_total: 20 })
+CREATE (batata_encomenda5)-[:DO_TIPO]->(batata)
+CREATE (batata_encomenda5)-[:PERTENCE { quantidade: 20 }]->(seara)
+
+CREATE(banana_encomenda5:ALIMENTO_DA_ENCOMENDA { quantidade_total: 120 })
+CREATE (banana_encomenda5)-[:DO_TIPO]->(banana)
+CREATE (banana_encomenda5)-[:PERTENCE { quantidade: 100 }]->(citricola_lucato)
+CREATE (banana_encomenda5)-[:PERTENCE { quantidade: 20 }]->(seara)
+
+CREATE(morango_encomenda5:ALIMENTO_DA_ENCOMENDA { quantidade_total: 30 })
+CREATE (morango_encomenda5)-[:DO_TIPO]->(morango)
+CREATE (morango_encomenda5)-[:PERTENCE { quantidade: 30 }]->(citricola_lucato)
+
+CREATE(cenoura_encomenda5:ALIMENTO_DA_ENCOMENDA { quantidade_total: 60 })
+CREATE (cenoura_encomenda5)-[:DO_TIPO]->(cenoura)
+CREATE (cenoura_encomenda5)-[:PERTENCE { quantidade: 60 }]->(brasnica)
+
+CREATE(abacate_encomenda5:ALIMENTO_DA_ENCOMENDA { quantidade_total: 14 })
+CREATE (abacate_encomenda5)-[:DO_TIPO]->(abacate)
+CREATE (abacate_encomenda5)-[:PERTENCE { quantidade: 14 }]->(frutas_real)
+
+
+CREATE (seara)-[:FORNECE]->(melao)
+CREATE (seara)-[:FORNECE]->(alface)
+CREATE (seara)-[:FORNECE]->(milho_verde)
+CREATE (seara)-[:FORNECE]->(feijao)
+CREATE (seara)-[:FORNECE]->(batata)
+CREATE (seara)-[:FORNECE]->(banana)
+CREATE (seara)-[:FORNECE]->(abacate)
+CREATE (seara)-[:FORNECE]->(arroz)
+
+CREATE (copeagro)-[:FORNECE]->(tangerina)
+CREATE (copeagro)-[:FORNECE]->(uva)
+CREATE (copeagro)-[:FORNECE]->(arroz)
+CREATE (copeagro)-[:FORNECE]->(feijao)
+CREATE (copeagro)-[:FORNECE]->(morango)
+CREATE (copeagro)-[:FORNECE]->(melao)
+
+CREATE (brasnica)-[:FORNECE]->(melao)
+CREATE (brasnica)-[:FORNECE]->(batata)
+CREATE (brasnica)-[:FORNECE]->(tangerina)
+CREATE (brasnica)-[:FORNECE]->(morango)
+CREATE (brasnica)-[:FORNECE]->(couve)
+CREATE (brasnica)-[:FORNECE]->(milho_verde)
+CREATE (brasnica)-[:FORNECE]->(arroz)
+CREATE (brasnica)-[:FORNECE]->(cenoura)
+CREATE (brasnica)-[:FORNECE]->(abacate)
+
+CREATE (frutas_real)-[:FORNECE]->(melao)
+CREATE (frutas_real)-[:FORNECE]->(arroz)
+CREATE (frutas_real)-[:FORNECE]->(feijao)
+CREATE (frutas_real)-[:FORNECE]->(abacate)
+CREATE (frutas_real)-[:FORNECE]->(uva)
+CREATE (frutas_real)-[:FORNECE]->(cebola)
+CREATE (frutas_real)-[:FORNECE]->(couve)
+
+CREATE (citricola_lucato)-[:FORNECE]->(banana)
+CREATE (citricola_lucato)-[:FORNECE]->(maca)
+CREATE (citricola_lucato)-[:FORNECE]->(cenoura)
+CREATE (citricola_lucato)-[:FORNECE]->(cebola)
+CREATE (citricola_lucato)-[:FORNECE]->(milho_verde)
+CREATE (citricola_lucato)-[:FORNECE]->(morango)
+CREATE (citricola_lucato)-[:FORNECE]->(couve)
+CREATE (citricola_lucato)-[:FORNECE]->(tangerina)
+
+
+CREATE (encomenda1)-[:CONTEM]->(banana_encomenda1)
+CREATE (encomenda1)-[:CONTEM]->(maca_encomenda1)
+CREATE (encomenda1)-[:CONTEM]->(cenoura_encomenda1)
+CREATE (encomenda1)-[:CONTEM]->(cebola_encomenda1)
+
+CREATE (encomenda1)-[:CONTEM]->(melao_encomenda2)
+CREATE (encomenda2)-[:CONTEM]->(arroz_encomenda2)
+CREATE (encomenda2)-[:CONTEM]->(batata_encomenda2)
+CREATE (encomenda2)-[:CONTEM]->(feijao_encomenda2)
+
+CREATE (encomenda3)-[:CONTEM]->(melao_encomenda3)
+CREATE (encomenda3)-[:CONTEM]->(tangerina_encomenda3)
+CREATE (encomenda3)-[:CONTEM]->(morango_encomenda3)
+CREATE (encomenda3)-[:CONTEM]->(uva_encomenda3)
+
+CREATE (encomenda4)-[:CONTEM]->(couve_encomenda4)
+CREATE (encomenda4)-[:CONTEM]->(arroz_encomenda4)
+CREATE (encomenda4)-[:CONTEM]->(melao_encomenda4)
+CREATE (encomenda4)-[:CONTEM]->(alface_encomenda4)
+
+CREATE (encomenda5)-[:CONTEM]->(milho_verde_encomenda5)
+CREATE (encomenda5)-[:CONTEM]->(feijao_encomenda5)
+CREATE (encomenda5)-[:CONTEM]->(arroz_encomenda5)
+CREATE (encomenda5)-[:CONTEM]->(batata_encomenda5)
+CREATE (encomenda5)-[:CONTEM]->(banana_encomenda5)
+CREATE (encomenda5)-[:CONTEM]->(morango_encomenda5)
+CREATE (encomenda5)-[:CONTEM]->(cenoura_encomenda5)
+CREATE (encomenda5)-[:CONTEM]->(abacate_encomenda5)
 
 
 
 -- Nota fiscal --
-CREATE (nota_fiscal_encomenda1_seara:NOTA_FISCAL:PAGA { vencimento: '2017-08-22', valor: 2000 })
-CREATE (nota_fiscal_encomenda1_brasnica:NOTA_FISCAL:PAGA { vencimento: '2017-09-27', valor: 250 })
-CREATE (nota_fiscal_encomenda1_copeagro:NOTA_FISCAL:PAGA { vencimento: '2017-10-12', valor: 1800 })
-CREATE (nota_fiscal_encomenda2_copeagro:NOTA_FISCAL:PAGA { vencimento: '2017-10-22', valor: 800 })
-CREATE (nota_fiscal_encomenda2_seara:NOTA_FISCAL:PAGA { vencimento: '2017-10-22', valor: 760 })
-CREATE (nota_fiscal_encomenda3_seara:NOTA_FISCAL:PAGA { vencimento: '2017-11-12', valor: 120 })
-CREATE (nota_fiscal_encomenda1_citricola_lucato:NOTA_FISCAL:PAGA { vencimento: '2017-11-12', valor: 450 })
-CREATE (nota_fiscal_encomenda1_frutas_real:NOTA_FISCAL:PAGA { vencimento: '2017-11-12', valor: 380 })
+CREATE (nota_fiscal_encomenda1_citricola_lucato:NOTA_FISCAL:PAGA { vencimento: '2017-08-22', valor: 100 })
+CREATE (citricola_lucato)-[:GERA]->(nota_fiscal_encomenda1_citricola_lucato)
+CREATE (nota_fiscal_encomenda1_citricola_lucato)-[:REFERENTE]->(encomenda1)
 
+CREATE (nota_fiscal_encomenda2_frutas_real:NOTA_FISCAL:PAGA { vencimento: '2017-09-27', valor: 200 })
+CREATE (frutas_real)-[:GERA]->(nota_fiscal_encomenda2_frutas_real)
+CREATE (nota_fiscal_encomenda2_frutas_real)-[:REFERENTE]->(encomenda2)
 
+CREATE (nota_fiscal_encomenda2_brasnica:NOTA_FISCAL:PAGA { vencimento: '2017-09-27', valor: 321 })
+CREATE (brasnica)-[:GERA]->(nota_fiscal_encomenda2_brasnica)
+CREATE (nota_fiscal_encomenda2_brasnica)-[:REFERENTE]->(encomenda2)
 
+CREATE (nota_fiscal_encomenda3_copeagro:NOTA_FISCAL:PAGA { vencimento: '2017-10-12', valor: 850 })
+CREATE (copeagro)-[:GERA]->(nota_fiscal_encomenda3_copeagro)
+CREATE (nota_fiscal_encomenda3_copeagro)-[:REFERENTE]->(encomenda3)
 
-CREATE (BomSabor)-[:REALIZA { data: '' }]->(encomenda)
-CREATE (encomenda)-[:CONTEM { quantidade: 0 }]->(alimento_da_encomenda)
-CREATE (alimento_da_encomenda)-[:PERTENCE { quantidade: 0 }]->(fornecedor)
+CREATE (nota_fiscal_encomenda3_brasnica:NOTA_FISCAL:PAGA { vencimento: '2017-10-12', valor: 240 })
+CREATE (brasnica)-[:GERA]->(nota_fiscal_encomenda3_brasnica)
+CREATE (nota_fiscal_encomenda3_brasnica)-[:REFERENTE]->(encomenda3)
 
-CREATE (alimento_da_encomenda)-[:DO_TIPO]->(alimento)
-CREATE (fornecedor)-[:FORNECE { quantidade_disponivel: 0 }]->(alimento)
-CREATE (fornecedor)-[:GERA]->(nota_fiscal)
-CREATE (nota_fiscal)-[:REFERENTE]->(encomenda)
+CREATE (nota_fiscal_encomenda4_brasnica:NOTA_FISCAL:PAGA { vencimento: '2017-10-22', valor: 133 })
+CREATE (brasnica)-[:GERA]->(nota_fiscal_encomenda4_brasnica)
+CREATE (nota_fiscal_encomenda4_brasnica)-[:REFERENTE]->(encomenda4)
+
+CREATE (nota_fiscal_encomenda4_copeagro:NOTA_FISCAL:PAGA { vencimento: '2017-10-22', valor: 89 })
+CREATE (copeagro)-[:GERA]->(nota_fiscal_encomenda4_copeagro)
+CREATE (nota_fiscal_encomenda4_copeagro)-[:REFERENTE]->(encomenda4)
+
+CREATE (nota_fiscal_encomenda4_seara:NOTA_FISCAL:PAGA { vencimento: '2017-10-22', valor: 20 })
+CREATE (seara)-[:GERA]->(nota_fiscal_encomenda4_seara)
+CREATE (nota_fiscal_encomenda4_seara)-[:REFERENTE]->(encomenda4)
+
+CREATE (nota_fiscal_encomenda5_seara:NOTA_FISCAL:PAGA { vencimento: '2017-11-12', valor: 340 })
+CREATE (seara)-[:GERA]->(nota_fiscal_encomenda5_seara)
+CREATE (nota_fiscal_encomenda5_seara)-[:REFERENTE]->(encomenda5)
+
+CREATE (nota_fiscal_encomenda5_brasnica:NOTA_FISCAL:PAGA { vencimento: '2017-11-12', valor: 550 })
+CREATE (brasnica)-[:GERA]->(nota_fiscal_encomenda5_brasnica)
+CREATE (nota_fiscal_encomenda5_brasnica)-[:REFERENTE]->(encomenda5)
+
+CREATE (nota_fiscal_encomenda5_citricola_lucato:NOTA_FISCAL:PAGA { vencimento: '2017-11-12', valor: 120 })
+CREATE (citricola_lucato)-[:GERA]->(nota_fiscal_encomenda5_citricola_lucato)
+CREATE (nota_fiscal_encomenda5_citricola_lucato)-[:REFERENTE]->(encomenda5)
+
+CREATE (nota_fiscal_encomenda5_frutas_real:NOTA_FISCAL:PAGA { vencimento: '2017-11-12', valor: 502 })
+CREATE (frutas_real)-[:GERA]->(nota_fiscal_encomenda5_frutas_real)
+CREATE (nota_fiscal_encomenda5_frutas_real)-[:REFERENTE]->(encomenda5)
+
 
