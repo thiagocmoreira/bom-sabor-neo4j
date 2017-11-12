@@ -239,7 +239,7 @@ CREATE (MariaEduarda:ASSOCIADO {
   filiacao: 'Manoela Evelyn Moura',
   sexo: 'Feminino',
   estado_civil: 'Casado',
-  email: 'mariaeem@bol.com.br,
+  email: 'mariaeem@bol.com.br',
   escolaridade: 'Ensino Superior Incompleto',
   cargo: 'Estudante'
 })
@@ -247,42 +247,38 @@ CREATE (MariaEduarda:ASSOCIADO {
 
 
 -- Mensalidade --
-CREATE (mensalidade1_associado1:MENSALIDADE:PAGA { vencimento: '2017-05-20' })
-CREATE (mensalidade2_associado1:MENSALIDADE:PAGA { vencimento: '2017-06-20' })
-CREATE (mensalidade3_associado1:MENSALIDADE:PAGA { vencimento: '2017-07-20' })
-CREATE (mensalidade4_associado1:MENSALIDADE:PAGA { vencimento: '2017-09-20' })
-CREATE (mensalidade5_associado1:MENSALIDADE:PAGA { vencimento: '2017-10-20' })
-CREATE (mensalidade6_associado1:MENSALIDADE:NAO_PAGA { vencimento: '2017-11-20' })
+CREATE (mensalidade1_matheusNicolas:MENSALIDADE:PAGA { vencimento: '2017-05-20' })
+CREATE (mensalidade2_matheusNicolas:MENSALIDADE:PAGA { vencimento: '2017-06-20' })
+CREATE (mensalidade3_matheusNicolas:MENSALIDADE:PAGA { vencimento: '2017-07-20' })
+CREATE (mensalidade4_matheusNicolas:MENSALIDADE:PAGA { vencimento: '2017-09-20' })
+CREATE (mensalidade5_matheusNicolas:MENSALIDADE:PAGA { vencimento: '2017-10-20' })
+CREATE (mensalidade6_matheusNicolas:MENSALIDADE:NAO_PAGA { vencimento: '2017-11-20' })
 
-CREATE (mensalidade1_associado2:MENSALIDADE:PAGA { vencimento: '2017-06-16' })
-CREATE (mensalidade2_associado2:MENSALIDADE:PAGA { vencimento: '2017-08-16' })
-CREATE (mensalidade3_associado2:MENSALIDADE:PAGA { vencimento: '2017-09-16' })
-CREATE (mensalidade4_associado2:MENSALIDADE:PAGA { vencimento: '2017-10-16' })
-CREATE (mensalidade5_associado2:MENSALIDADE:NAO_PAGA { vencimento: '2017-11-16' })
+CREATE (mensalidade1_TomasOtavio:MENSALIDADE:PAGA { vencimento: '2017-06-16' })
+CREATE (mensalidade2_TomasOtavio:MENSALIDADE:PAGA { vencimento: '2017-08-16' })
+CREATE (mensalidade3_TomasOtavio:MENSALIDADE:PAGA { vencimento: '2017-09-16' })
+CREATE (mensalidade4_TomasOtavio:MENSALIDADE:PAGA { vencimento: '2017-10-16' })
+CREATE (mensalidade5_TomasOtavio:MENSALIDADE:NAO_PAGA { vencimento: '2017-11-16' })
 
-CREATE (mensalidade1_associado3:MENSALIDADE:PAGA { vencimento: '2017-08-15' })
-CREATE (mensalidade2_associado3:MENSALIDADE:PAGA { vencimento: '2017-09-15' })
-CREATE (mensalidade3_associado3:MENSALIDADE:PAGA { vencimento: '2017-10-15' })
-CREATE (mensalidade4_associado3:MENSALIDADE:NAO_PAGA { vencimento: '2017-11-15' })
+CREATE (mensalidade1_SarahFernanda:MENSALIDADE:PAGA { vencimento: '2017-08-15' })
+CREATE (mensalidade2_SarahFernanda:MENSALIDADE:PAGA { vencimento: '2017-09-15' })
+CREATE (mensalidade3_SarahFernanda:MENSALIDADE:PAGA { vencimento: '2017-10-15' })
+CREATE (mensalidade4_SarahFernanda:MENSALIDADE:NAO_PAGA { vencimento: '2017-11-15' })
 
-CREATE (mensalidade1_associado4:MENSALIDADE:PAGA { vencimento: '2017-09-10' })
-CREATE (mensalidade2_associado4:MENSALIDADE:PAGA { vencimento: '2017-10-10' })
-CREATE (mensalidade3_associado4:MENSALIDADE:PAGA { vencimento: '2017-11-10' })
+CREATE (mensalidade1_MariaEduarda:MENSALIDADE:PAGA { vencimento: '2017-09-10' })
+CREATE (mensalidade2_MariaEduarda:MENSALIDADE:PAGA { vencimento: '2017-10-10' })
+CREATE (mensalidade3_MariaEduarda:MENSALIDADE:PAGA { vencimento: '2017-11-10' })
 
 
 
 -- Lista de Compra --
-CREATE (lista_de_compra1_associado1:LISTA_DE_COMPRA:PAGA { data: '2017-08-19' })
-CREATE (lista_de_compra2_associado1:LISTA_DE_COMPRA:NAO_PAGA { data: '2017-11-10' })
-
-CREATE (lista_de_compra1_associado2:LISTA_DE_COMPRA:PAGA { data: '2017-09-23' })
-
-CREATE (lista_de_compra1_associado3:LISTA_DE_COMPRA:PAGA { data: '2017-10-02' })
-CREATE (lista_de_compra2_associado3:LISTA_DE_COMPRA:PAGA { data: '2017-10-18' })
-CREATE (lista_de_compra2_associado3:LISTA_DE_COMPRA:PAGA { data: '2017-11-01' })
-
-CREATE (lista_de_compra1_associado4:LISTA_DE_COMPRA:NAO_PAGA { data: '2017-11-07' })
-
+CREATE (lista_de_compra1_matheusNicolas:LISTA_DE_COMPRA:PAGA { data: '2017-08-19' })
+CREATE (lista_de_compra1_TomasOtavio:LISTA_DE_COMPRA:PAGA { data: '2017-09-23' })
+CREATE (lista_de_compra1_SarahFernanda:LISTA_DE_COMPRA:PAGA { data: '2017-10-02' })
+CREATE (lista_de_compra2_SarahFernanda:LISTA_DE_COMPRA:PAGA { data: '2017-10-18' })
+CREATE (lista_de_compra2_SarahFernanda:LISTA_DE_COMPRA:PAGA { data: '2017-11-01' })
+CREATE (lista_de_compra1_MariaEduarda:LISTA_DE_COMPRA:NAO_PAGA { data: '2017-11-07' })
+CREATE (lista_de_compra2_matheusNicolas:LISTA_DE_COMPRA:NAO_PAGA { data: '2017-11-10' })
 
 
 
@@ -297,36 +293,46 @@ CREATE (citricola_lucato:FORNECEDOR { nome: 'Citricola Lucato', razao_social: 'C
 
 -- Encomendas --
 CREATE (encomenda1_seara:ENCOMENDA { data: '2017-08-20' })
-CREATE (encomenda2_seara:ENCOMENDA { data: '2017-10-20' })
-CREATE (encomenda3_seara:ENCOMENDA { data: '2017-11-10' })
-
-
+CREATE (encomenda1_brasnica:ENCOMENDA { data: '2017-09-25' })
 CREATE (encomenda1_copeagro:ENCOMENDA { data: '2017-10-10' })
 CREATE (encomenda2_copeagro:ENCOMENDA { data: '2017-10-20' })
-
-CREATE (encomenda1_brasnica:ENCOMENDA { data: '2017-09-25' })
-
-CREATE (encomenda1_frutas_real:ENCOMENDA { data: '2017-11-10' })
-
+CREATE (encomenda2_seara:ENCOMENDA { data: '2017-10-20' })
+CREATE (encomenda3_seara:ENCOMENDA { data: '2017-11-10' })
 CREATE (encomenda1_citricola_lucato:ENCOMENDA { data: '2017-11-10' })
-
+CREATE (encomenda1_frutas_real:ENCOMENDA { data: '2017-11-10' })
 
 
 
 -- Alimentos de uma encomenda --
-CREATE(alimento_da_encomenda:ALIMENTO_DA_ENCOMENDA {
-  quantidade_total: 0
-})
-
+CREATE(banana_encomenda1_seara:ALIMENTO_DA_ENCOMENDA { quantidade_total: 10 })
+CREATE(maca_encomenda1_seara:ALIMENTO_DA_ENCOMENDA { quantidade_total: 50 })
+CREATE(banana_encomenda2_seara:ALIMENTO_DA_ENCOMENDA { quantidade_total: 100 })
+CREATE(arroz_encomenda2_seara:ALIMENTO_DA_ENCOMENDA { quantidade_total: 20 })
+CREATE(melao_encomenda2_seara:ALIMENTO_DA_ENCOMENDA { quantidade_total: 50 })
+CREATE(cenoura_encomenda3_seara:ALIMENTO_DA_ENCOMENDA { quantidade_total: 200 })
+CREATE(cebola_encomenda3_seara:ALIMENTO_DA_ENCOMENDA { quantidade_total: 150 })
+CREATE(feijao_encomenda1_copeagro:ALIMENTO_DA_ENCOMENDA { quantidade_total: 30 })
+CREATE(couve_encomenda1_copeagro:ALIMENTO_DA_ENCOMENDA { quantidade_total: 50 })
+CREATE(morango_encomenda1_copeagro:ALIMENTO_DA_ENCOMENDA { quantidade_total: 100 })
+CREATE(melao_encomenda2_copeagro:ALIMENTO_DA_ENCOMENDA { quantidade_total: 80 })
+CREATE(batata_encomenda1_brasnica:ALIMENTO_DA_ENCOMENDA { quantidade_total: 100 })
+CREATE(tangerina_encomenda1_brasnica:ALIMENTO_DA_ENCOMENDA { quantidade_total: 80 })
+CREATE(milho_verde_encomenda1_frutas_real:ALIMENTO_DA_ENCOMENDA { quantidade_total: 10 })
+CREATE(tangerina_encomenda1_frutas_real:ALIMENTO_DA_ENCOMENDA { quantidade_total: 20 })
+CREATE(feijao_encomenda1_citricola_lucato:ALIMENTO_DA_ENCOMENDA { quantidade_total: 10 })
 
 
 
 
 -- Nota fiscal --
-CREATE (nota_fiscal:NOTA_FISCAL:NAO_PAGA {
-  vencimento: '',
-  valor: 0
-})
+CREATE (nota_fiscal_encomenda1_seara:NOTA_FISCAL:PAGA { vencimento: '2017-08-22', valor: 2000 })
+CREATE (nota_fiscal_encomenda1_brasnica:NOTA_FISCAL:PAGA { vencimento: '2017-09-27', valor: 250 })
+CREATE (nota_fiscal_encomenda1_copeagro:NOTA_FISCAL:PAGA { vencimento: '2017-10-12', valor: 1800 })
+CREATE (nota_fiscal_encomenda2_copeagro:NOTA_FISCAL:PAGA { vencimento: '2017-10-22', valor: 800 })
+CREATE (nota_fiscal_encomenda2_seara:NOTA_FISCAL:PAGA { vencimento: '2017-10-22', valor: 760 })
+CREATE (nota_fiscal_encomenda3_seara:NOTA_FISCAL:PAGA { vencimento: '2017-11-12', valor: 120 })
+CREATE (nota_fiscal_encomenda1_citricola_lucato:NOTA_FISCAL:PAGA { vencimento: '2017-11-12', valor: 450 })
+CREATE (nota_fiscal_encomenda1_frutas_real:NOTA_FISCAL:PAGA { vencimento: '2017-11-12', valor: 380 })
 
 
 
