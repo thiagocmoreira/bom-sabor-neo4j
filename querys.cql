@@ -204,6 +204,102 @@ CREATE (MariaEduarda:ASSOCIADO {
 CREATE (MariaEduarda)-[:CONTRATA { data_inicial: '2017-09-10', vencimento: 10 }]->(PlanoTrimestral)
 
 
+// Mensalidades do Matheus
+// Primeiro Mes
+CREATE (Mensalidade1_MatheusNicolas:MENSALIDADE:PAGA { vencimento: '2017-05-20' })
+CREATE (Mensalidade1_MatheusNicolas)-[:DO_PLANO]->(plano_anual)
+CREATE (MatheusNicolas)-[:PAGOU { data: '2017-05-19' }]->(Mensalidade1_MatheusNicolas)
+
+// Segundo Mes
+CREATE (Mensalidade2_MatheusNicolas:MENSALIDADE:PAGA { vencimento: '2017-06-20' })
+CREATE (Mensalidade2_MatheusNicolas)-[:DO_PLANO]->(plano_anual)
+CREATE (MatheusNicolas)-[:PAGOU { data: '2017-06-20' }]->(Mensalidade2_MatheusNicolas)
+
+// Terceiro Mes
+CREATE (Mensalidade3_MatheusNicolas:MENSALIDADE:PAGA { vencimento: '2017-07-20' })
+CREATE (Mensalidade3_MatheusNicolas)-[:DO_PLANO]->(plano_anual)
+CREATE (MatheusNicolas)-[:PAGOU { data: '2017-07-19' }]->(Mensalidade3_MatheusNicolas)
+
+// Quarto Mes
+CREATE (Mensalidade4_MatheusNicolas:MENSALIDADE:PAGA { vencimento: '2017-09-20' })
+CREATE (Mensalidade4_MatheusNicolas)-[:DO_PLANO]->(plano_anual)
+CREATE (MatheusNicolas)-[:PAGOU { data: '2017-09-20' }]->(Mensalidade4_MatheusNicolas)
+
+// Quinto Mes
+CREATE (Mensalidade5_MatheusNicolas:MENSALIDADE:PAGA { vencimento: '2017-10-20' })
+CREATE (Mensalidade5_MatheusNicolas)-[:DO_PLANO]->(plano_anual)
+CREATE (MatheusNicolas)-[:PAGOU { data: '2017-10-18' }]->(Mensalidade5_MatheusNicolas)
+
+// Sexto Mes
+CREATE (Mensalidade6_MatheusNicolas:MENSALIDADE:NAO_PAGA { vencimento: '2017-11-20' })
+CREATE (Mensalidade6_MatheusNicolas)-[:DO_PLANO]->(plano_anual)
+
+
+// Mensalidades do Tomas
+// Primeiro Mes
+CREATE (Mensalidade1_TomasOtavio:MENSALIDADE:PAGA { vencimento: '2017-06-16' })
+CREATE (Mensalidade1_TomasOtavio)-[:DO_PLANO]->(plano_anual)
+CREATE (TomasOtavio)-[:PAGOU { data: '2017-06-16' }]->(Mensalidade1_TomasOtavio)
+
+// Segundo Mes
+CREATE (Mensalidade2_TomasOtavio:MENSALIDADE:PAGA { vencimento: '2017-08-16' })
+CREATE (Mensalidade2_TomasOtavio)-[:DO_PLANO]->(plano_anual)
+CREATE (TomasOtavio)-[:PAGOU { data: '2017-08-15' }]->(Mensalidade2_TomasOtavio)
+
+// Terceiro Mes
+CREATE (Mensalidade3_TomasOtavio:MENSALIDADE:PAGA { vencimento: '2017-09-16' })
+CREATE (Mensalidade3_TomasOtavio)-[:DO_PLANO]->(plano_anual)
+CREATE (TomasOtavio)-[:PAGOU { data: '2017-09-15' }]->(Mensalidade3_TomasOtavio)
+
+// Quarto Mes
+CREATE (Mensalidade4_TomasOtavio:MENSALIDADE:PAGA { vencimento: '2017-10-16' })
+CREATE (Mensalidade4_TomasOtavio)-[:DO_PLANO]->(plano_anual)
+CREATE (TomasOtavio)-[:PAGOU { data: '2017-10-16' }]->(Mensalidade4_TomasOtavio)
+
+// Quinto Mes
+CREATE (Mensalidade5_TomasOtavio:MENSALIDADE:NAO_PAGA { vencimento: '2017-11-16' })
+CREATE (Mensalidade5_TomasOtavio)-[:DO_PLANO]->(plano_anual)
+
+
+// Mensalidades da Sarah
+// Primeiro Mes
+CREATE (Mensalidade1_SarahFernanda:MENSALIDADE:PAGA { vencimento: '2017-08-15' })
+CREATE (Mensalidade1_SarahFernanda)-[:DO_PLANO]->(plano_semestral)
+CREATE (SarahFernanda)-[:PAGOU { data: '2017-08-15' }]->(Mensalidade1_SarahFernanda)
+
+// Segundo Mes
+CREATE (Mensalidade2_SarahFernanda:MENSALIDADE:PAGA { vencimento: '2017-09-15' })
+CREATE (Mensalidade2_SarahFernanda)-[:DO_PLANO]->(plano_semestral)
+CREATE (SarahFernanda)-[:PAGOU { data: '2017-09-15' }]->(Mensalidade2_SarahFernanda)
+
+// Terceiro Mes
+CREATE (Mensalidade3_SarahFernanda:MENSALIDADE:PAGA { vencimento: '2017-10-15' })
+CREATE (Mensalidade3_SarahFernanda)-[:DO_PLANO]->(plano_semestral)
+CREATE (SarahFernanda)-[:PAGOU { data: '2017-10-14' }]->(mensalidade3_SarahFernanda)
+
+// Quarto Mes
+CREATE (Mensalidade4_SarahFernanda:MENSALIDADE:NAO_PAGA { vencimento: '2017-11-15' })
+CREATE (Mensalidade4_SarahFernanda)-[:DO_PLANO]->(plano_semestral)
+
+
+// Mensalidades da Maria
+// Primeiro Mes
+CREATE (Mensalidade1_MariaEduarda:MENSALIDADE:PAGA { vencimento: '2017-09-10' })
+CREATE (Mensalidade1_MariaEduarda)-[:DO_PLANO]->(plano_trimestral)
+CREATE (MariaEduarda)-[:PAGOU { data: '2017-09-10' }]->(Mensalidade1_MariaEduarda)
+
+// Segundo Mes
+CREATE (Mensalidade2_MariaEduarda:MENSALIDADE:PAGA { vencimento: '2017-10-10' })
+CREATE (Mensalidade2_MariaEduarda)-[:DO_PLANO]->(plano_trimestral)
+CREATE (MariaEduarda)-[:PAGOU { data: '2017-10-09' }]->(Mensalidade2_MariaEduarda)
+
+// Terceiro Mes
+CREATE (Mensalidade3_MariaEduarda:MENSALIDADE:PAGA { vencimento: '2017-11-10' })
+CREATE (Mensalidade3_MariaEduarda)-[:DO_PLANO]->(plano_trimestral)
+CREATE (MariaEduarda)-[:PAGOU { data: '2017-11-09' }]->(Mensalidade3_MariaEduarda)
+
+
+
 // Alimentos
 CREATE (maca:ALIMENTO { nome: 'Maçã', tipo: 'fruta' })
 CREATE (banana:ALIMENTO { nome: 'Banana', tipo: 'fruta' })
@@ -220,3 +316,159 @@ CREATE (uva:ALIMENTO { nome: 'Uva', tipo: 'fruta' })
 CREATE (morango:ALIMENTO { nome: 'Morango', tipo: 'fruta' })
 CREATE (abacate:ALIMENTO { nome: 'Abacate', tipo: 'fruta' })
 CREATE (melao:ALIMENTO { nome: 'Melão', tipo: 'fruta' })
+
+
+
+// Fornecedores
+CREATE (seara:FORNECEDOR { nome: 'Seara', razao_social: 'Seara Alimentos S/a', cnpj: '02.914.460/0085-69' })
+CREATE (BomSabor)-[:CONTRATA { data_de_contrato: '2017-06-10' }]->(seara)
+
+CREATE (copeagro:FORNECEDOR { nome: 'Copeagro', razao_social: 'Copeagro - Cooperativa Agropecuaria De Tambau E Regiao', cnpj: '13.715.182/0001-29' })
+CREATE (BomSabor)-[:CONTRATA { data_de_contrato: '2017-05-23' }]->(copeagro)
+
+CREATE (brasnica:FORNECEDOR { nome: 'Brasnica', razao_social: 'Brasnica Frutas Tropicais Ltda', cnpj: '66.293.218/0009-47' })
+CREATE (BomSabor)-[:CONTRATA { data_de_contrato: '2017-03-01' }]->(brasnica)
+
+CREATE (frutas_real:FORNECEDOR { nome: 'Frutas Real', razao_social: 'Distribuidora De Frutas Real Ltda', cnpj: '80.727.928/0001-01' })
+CREATE (BomSabor)-[:CONTRATA { data_de_contrato: '2017-04-14' }]->(frutas_real)
+
+CREATE (citricola_lucato:FORNECEDOR { nome: 'Citricola Lucato', razao_social: 'Citricola Lucato Comercial Importadora E Exportadora Ltda', cnpj: '00.589.220/0001-00' })
+CREATE (BomSabor)-[:CONTRATA { data_de_contrato: '2017-09-25' }]->(citricola_lucato)
+
+// Alimentos fornecidos pela Seara
+CREATE (seara)-[:FORNECE]->(melao)
+CREATE (seara)-[:FORNECE]->(alface)
+CREATE (seara)-[:FORNECE]->(milho_verde)
+CREATE (seara)-[:FORNECE]->(feijao)
+CREATE (seara)-[:FORNECE]->(batata)
+CREATE (seara)-[:FORNECE]->(banana)
+CREATE (seara)-[:FORNECE]->(abacate)
+CREATE (seara)-[:FORNECE]->(arroz)
+
+// Alimentos fornecidos pela Copeagro
+CREATE (copeagro)-[:FORNECE]->(tangerina)
+CREATE (copeagro)-[:FORNECE]->(uva)
+CREATE (copeagro)-[:FORNECE]->(arroz)
+CREATE (copeagro)-[:FORNECE]->(feijao)
+CREATE (copeagro)-[:FORNECE]->(morango)
+CREATE (copeagro)-[:FORNECE]->(melao)
+
+// Alimentos fornecidos pela Brasnica
+CREATE (brasnica)-[:FORNECE]->(melao)
+CREATE (brasnica)-[:FORNECE]->(batata)
+CREATE (brasnica)-[:FORNECE]->(tangerina)
+CREATE (brasnica)-[:FORNECE]->(morango)
+CREATE (brasnica)-[:FORNECE]->(couve)
+CREATE (brasnica)-[:FORNECE]->(milho_verde)
+CREATE (brasnica)-[:FORNECE]->(arroz)
+CREATE (brasnica)-[:FORNECE]->(cenoura)
+CREATE (brasnica)-[:FORNECE]->(abacate)
+
+// Alimentos fornecidos pela Frutas Real
+CREATE (frutas_real)-[:FORNECE]->(melao)
+CREATE (frutas_real)-[:FORNECE]->(arroz)
+CREATE (frutas_real)-[:FORNECE]->(feijao)
+CREATE (frutas_real)-[:FORNECE]->(abacate)
+CREATE (frutas_real)-[:FORNECE]->(uva)
+CREATE (frutas_real)-[:FORNECE]->(cebola)
+CREATE (frutas_real)-[:FORNECE]->(couve)
+
+// Alimentos fornecidos pela Citricola Lucato
+CREATE (citricola_lucato)-[:FORNECE]->(banana)
+CREATE (citricola_lucato)-[:FORNECE]->(maca)
+CREATE (citricola_lucato)-[:FORNECE]->(cenoura)
+CREATE (citricola_lucato)-[:FORNECE]->(cebola)
+CREATE (citricola_lucato)-[:FORNECE]->(milho_verde)
+CREATE (citricola_lucato)-[:FORNECE]->(morango)
+CREATE (citricola_lucato)-[:FORNECE]->(couve)
+CREATE (citricola_lucato)-[:FORNECE]->(tangerina)
+
+
+
+
+// Listas de Compra do Matheus
+// Primeira Lista
+CREATE (lista_de_compra1_MatheusNicolas:LISTA_DE_COMPRA:PAGA { data: '2017-08-19' })
+CREATE (MatheusNicolas)-[:REALIZA]->(lista_de_compra1_MatheusNicolas)
+CREATE (lista_de_compra1_MatheusNicolas)-[:CONTEM { quantidade: 10 }]->(banana)
+CREATE (lista_de_compra1_MatheusNicolas)-[:CONTEM { quantidade: 30 }]->(maca)
+CREATE (lista_de_compra1_MatheusNicolas)-[:CONTEM { quantidade: 12 }]->(cenoura)
+CREATE (lista_de_compra1_MatheusNicolas)-[:CONTEM { quantidade: 15 }]->(cebola)
+
+// Segunda Lista
+CREATE (lista_de_compra2_MatheusNicolas:LISTA_DE_COMPRA:NAO_PAGA { data: '2017-11-10' })
+CREATE (MatheusNicolas)-[:REALIZA]->(lista_de_compra2_MatheusNicolas)
+CREATE (lista_de_compra2_MatheusNicolas)-[:CONTEM { quantidade: 18 }]->(arroz)
+CREATE (lista_de_compra2_MatheusNicolas)-[:CONTEM { quantidade: 20 }]->(batata)
+CREATE (lista_de_compra2_MatheusNicolas)-[:CONTEM { quantidade: 120 }]->(banana)
+
+// Listas de Compra do Tomas
+// Primeira Lista
+CREATE (lista_de_compra1_TomasOtavio:LISTA_DE_COMPRA:PAGA { data: '2017-09-23' })
+CREATE (TomasOtavio)-[:REALIZA]->(lista_de_compra1_TomasOtavio)
+CREATE (lista_de_compra1_TomasOtavio)-[:CONTEM { quantidade: 50 }]->(melao)
+CREATE (lista_de_compra1_TomasOtavio)-[:CONTEM { quantidade: 5 }]->(arroz)
+CREATE (lista_de_compra1_TomasOtavio)-[:CONTEM { quantidade: 30 }]->(batata)
+CREATE (lista_de_compra1_TomasOtavio)-[:CONTEM { quantidade: 8 }]->(feijao)
+
+// Listas de Compra da Sarah
+// Primeira Lista
+CREATE (lista_de_compra1_SarahFernanda:LISTA_DE_COMPRA:PAGA { data: '2017-10-02' })
+CREATE (SarahFernanda)-[:REALIZA]->(lista_de_compra1_SarahFernanda)
+CREATE (lista_de_compra1_SarahFernanda)-[:CONTEM { quantidade: 30 }]->(melao)
+CREATE (lista_de_compra1_SarahFernanda)-[:CONTEM { quantidade: 40 }]->(tangerina)
+CREATE (lista_de_compra1_SarahFernanda)-[:CONTEM { quantidade: 12 }]->(morango)
+CREATE (lista_de_compra1_SarahFernanda)-[:CONTEM { quantidade: 18 }]->(uva)
+
+// Segunda Lista
+CREATE (lista_de_compra2_SarahFernanda:LISTA_DE_COMPRA:PAGA { data: '2017-10-18' })
+CREATE (SarahFernanda)-[:REALIZA]->(lista_de_compra2_SarahFernanda)
+CREATE (lista_de_compra2_SarahFernanda)-[:CONTEM { quantidade: 8 }]->(couve)
+CREATE (lista_de_compra2_SarahFernanda)-[:CONTEM { quantidade: 22 }]->(arroz)
+CREATE (lista_de_compra2_SarahFernanda)-[:CONTEM { quantidade: 34 }]->(melao)
+CREATE (lista_de_compra2_SarahFernanda)-[:CONTEM { quantidade: 10 }]->(alface)
+
+// Terceira Lista
+CREATE (lista_de_compra3_SarahFernanda:LISTA_DE_COMPRA:PAGA { data: '2017-11-01' })
+CREATE (SarahFernanda)-[:REALIZA]->(lista_de_compra3_SarahFernanda)
+CREATE (lista_de_compra3_SarahFernanda)-[:CONTEM { quantidade: 30 }]->(morango)
+CREATE (lista_de_compra3_SarahFernanda)-[:CONTEM { quantidade: 60 }]->(cenoura)
+CREATE (lista_de_compra3_SarahFernanda)-[:CONTEM { quantidade: 20 }]->(arroz)
+CREATE (lista_de_compra3_SarahFernanda)-[:CONTEM { quantidade: 14 }]->(abacate)
+
+// Listas de Compra da Maria
+// Primeira Lista
+CREATE (lista_de_compra1_MariaEduarda:LISTA_DE_COMPRA:NAO_PAGA { data: '2017-11-07' })
+CREATE (MariaEduarda)-[:REALIZA]->(lista_de_compra1_MariaEduarda)
+CREATE (lista_de_compra1_MariaEduarda)-[:CONTEM { quantidade: 80 }]->(milho_verde)
+CREATE (lista_de_compra1_MariaEduarda)-[:CONTEM { quantidade: 20 }]->(feijao)
+CREATE (lista_de_compra1_MariaEduarda)-[:CONTEM { quantidade: 20 }]->(arroz)
+
+
+
+
+// Encomendas e suas listas de compras
+CREATE (encomenda1:ENCOMENDA { data: '2017-08-20' })
+CREATE (encomenda1)-[:CONTEMPLA]->(lista_de_compra1_MatheusNicolas)
+
+CREATE (encomenda2:ENCOMENDA { data: '2017-09-25' })
+CREATE (encomenda2)-[:CONTEMPLA]->(lista_de_compra1_TomasOtavio)
+
+CREATE (encomenda3:ENCOMENDA { data: '2017-10-10' })
+CREATE (encomenda3)-[:CONTEMPLA]->(lista_de_compra1_SarahFernanda)
+
+CREATE (encomenda4:ENCOMENDA { data: '2017-10-20' })
+CREATE (encomenda4)-[:CONTEMPLA]->(lista_de_compra2_SarahFernanda)
+
+CREATE (encomenda5:ENCOMENDA { data: '2017-11-10' })
+CREATE (encomenda5)-[:CONTEMPLA]->(lista_de_compra1_MariaEduarda)
+CREATE (encomenda5)-[:CONTEMPLA]->(lista_de_compra2_MatheusNicolas)
+CREATE (encomenda5)-[:CONTEMPLA]->(lista_de_compra3_SarahFernanda)
+
+
+// Cooperativa realizando as encomendas
+CREATE (BomSabor)-[:REALIZA]->(encomenda1)
+CREATE (BomSabor)-[:REALIZA]->(encomenda2)
+CREATE (BomSabor)-[:REALIZA]->(encomenda3)
+CREATE (BomSabor)-[:REALIZA]->(encomenda4)
+CREATE (BomSabor)-[:REALIZA]->(encomenda5)
