@@ -196,7 +196,53 @@ CREATE (melao:ALIMENTO { nome: 'Melão', tipo: 'fruta' })
 
 
 -- Associados --
-CREATE (associado:ASSOCIADO { nome: '', cpf: '', rg: '', filiacao: '', sexo: '', estado_civil: '', email: '', escolaridade: '', cargo: '' })
+CREATE (matheusNicolas:ASSOCIADO {
+  nome: 'Matheus Nicolas Anthony Souza',
+  cpf: '98320866987',
+  rg: '203466202',
+  filiacao: 'Maria Nicolas Anthony Souza',
+  sexo: 'Masculino',
+  estado_civil: 'Casado',
+  email: 'matheusnicolasanthonysouza_@tam.com.br',
+  escolaridade: 'Ensino Superior Completo',
+  cargo: 'Comerciante'
+})
+
+CREATE (TomasOtavio:ASSOCIADO {
+  nome: 'Tomas Otavio Gomes',
+  cpf: '82233986997',
+  rg: '323978277',
+  filiacao: 'Joana Otavio Gomes',
+  sexo: 'Masculino',
+  estado_civil: 'Solteiro',
+  email: 'tomazinho1995@gmail.com',
+  escolaridade: 'Ensino Fundamental Incompleto',
+  cargo: 'Estudante'
+})
+
+CREATE (SarahFernanda:ASSOCIADO {
+  nome: 'Sarah Fernanda Cardoso',
+  cpf: '91449037909',
+  rg: '169407755',
+  filiacao: 'Bernardete Fernanda Cardoso',
+  sexo: 'Feminino',
+  estado_civil: 'Viuvo',
+  email: 'sarahfernandacardoso@outlook.com.br',
+  escolaridade: 'Ensino Fundamental Completo',
+  cargo: 'Estudante'
+})
+
+CREATE (MariaEduarda:ASSOCIADO {
+  nome: 'Maria Eduarda Evelyn Moura',
+  cpf: '30078262925',
+  rg: '487231028',
+  filiacao: 'Manoela Evelyn Moura',
+  sexo: 'Feminino',
+  estado_civil: 'Casado',
+  email: 'mariaeem@bol.com.br,
+  escolaridade: 'Ensino Superior Incompleto',
+  cargo: 'Estudante'
+})
 
 
 
