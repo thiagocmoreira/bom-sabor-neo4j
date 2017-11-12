@@ -480,107 +480,107 @@ CREATE (BomSabor)-[:REALIZA]->(encomenda5)
 
 
 -- Alimentos de uma encomenda --
-CREATE(banana_encomenda1:ALIMENTO_DA_ENCOMENDA { quantidade_total: 10 })
+CREATE (banana_encomenda1:ALIMENTO_DA_ENCOMENDA { quantidade_total: 10 })
 CREATE (banana_encomenda1)-[:DO_TIPO]->(banana)
 CREATE (banana_encomenda1)-[:PERTENCE { quantidade: 10 }]->(citricola_lucato)
 
 
-CREATE(maca_encomenda1:ALIMENTO_DA_ENCOMENDA { quantidade_total: 30 })
+CREATE (maca_encomenda1:ALIMENTO_DA_ENCOMENDA { quantidade_total: 30 })
 CREATE (maca_encomenda1)-[:DO_TIPO]->(maca)
 CREATE (maca_encomenda1)-[:PERTENCE { quantidade: 30 }]->(citricola_lucato)
 
-CREATE(cenoura_encomenda1:ALIMENTO_DA_ENCOMENDA { quantidade_total: 12 })
+CREATE (cenoura_encomenda1:ALIMENTO_DA_ENCOMENDA { quantidade_total: 12 })
 CREATE (cenoura_encomenda1)-[:DO_TIPO]->(cenoura)
 CREATE (cenoura_encomenda1)-[:PERTENCE { quantidade: 12 }]->(citricola_lucato)
 
-CREATE(cebola_encomenda1:ALIMENTO_DA_ENCOMENDA { quantidade_total: 15 })
+CREATE (cebola_encomenda1:ALIMENTO_DA_ENCOMENDA { quantidade_total: 15 })
 CREATE (cebola_encomenda1)-[:DO_TIPO]->(cebola)
 CREATE (cebola_encomenda1)-[:PERTENCE { quantidade: 15 }]->(citricola_lucato)
 
-CREATE(melao_encomenda2:ALIMENTO_DA_ENCOMENDA { quantidade_total: 50 })
+CREATE (melao_encomenda2:ALIMENTO_DA_ENCOMENDA { quantidade_total: 50 })
 CREATE (melao_encomenda2)-[:DO_TIPO]->(melao)
 CREATE (melao_encomenda2)-[:PERTENCE { quantidade: 20 }]->(frutas_real)
 CREATE (melao_encomenda2)-[:PERTENCE { quantidade: 30 }]->(brasnica)
 
-CREATE(arroz_encomenda2:ALIMENTO_DA_ENCOMENDA { quantidade_total: 5 })
+CREATE (arroz_encomenda2:ALIMENTO_DA_ENCOMENDA { quantidade_total: 5 })
 CREATE (arroz_encomenda2)-[:DO_TIPO]->(arroz)
 CREATE (arroz_encomenda2)-[:PERTENCE { quantidade: 5 }]->(frutas_real)
 
-CREATE(batata_encomenda2:ALIMENTO_DA_ENCOMENDA { quantidade_total: 30 })
+CREATE (batata_encomenda2:ALIMENTO_DA_ENCOMENDA { quantidade_total: 30 })
 CREATE (batata_encomenda2)-[:DO_TIPO]->(batata)
 CREATE (batata_encomenda2)-[:PERTENCE { quantidade: 30 }]->(brasnica)
 
-CREATE(feijao_encomenda2:ALIMENTO_DA_ENCOMENDA { quantidade_total: 8 })
+CREATE (feijao_encomenda2:ALIMENTO_DA_ENCOMENDA { quantidade_total: 8 })
 CREATE (feijao_encomenda2)-[:DO_TIPO]->(feijao)
 CREATE (feijao_encomenda2)-[:PERTENCE { quantidade: 8 }]->(frutas_real)
 
-CREATE(melao_encomenda3:ALIMENTO_DA_ENCOMENDA { quantidade_total: 30 })
+CREATE (melao_encomenda3:ALIMENTO_DA_ENCOMENDA { quantidade_total: 30 })
 CREATE (melao_encomenda3)-[:DO_TIPO]->(melao)
 CREATE (melao_encomenda3)-[:PERTENCE { quantidade: 30 }]->(copeagro)
 
-CREATE(tangerina_encomenda3:ALIMENTO_DA_ENCOMENDA { quantidade_total: 40 })
+CREATE (tangerina_encomenda3:ALIMENTO_DA_ENCOMENDA { quantidade_total: 40 })
 CREATE (tangerina_encomenda3)-[:DO_TIPO]->(tangerina)
 CREATE (tangerina_encomenda3)-[:PERTENCE { quantidade: 24 }]->(copeagro)
 CREATE (tangerina_encomenda3)-[:PERTENCE { quantidade: 26 }]->(brasnica)
 
-CREATE(morango_encomenda3:ALIMENTO_DA_ENCOMENDA { quantidade_total: 12 })
+CREATE (morango_encomenda3:ALIMENTO_DA_ENCOMENDA { quantidade_total: 12 })
 CREATE (morango_encomenda3)-[:DO_TIPO]->(morango)
 CREATE (morango_encomenda3)-[:PERTENCE { quantidade: 12 }]->(brasnica)
 
-CREATE(uva_encomenda3:ALIMENTO_DA_ENCOMENDA { quantidade_total: 18 })
+CREATE (uva_encomenda3:ALIMENTO_DA_ENCOMENDA { quantidade_total: 18 })
 CREATE (uva_encomenda3)-[:DO_TIPO]->(uva)
 CREATE (uva_encomenda3)-[:PERTENCE { quantidade: 18 }]->(copeagro)
 
-CREATE(couve_encomenda4:ALIMENTO_DA_ENCOMENDA { quantidade_total: 8 })
+CREATE (couve_encomenda4:ALIMENTO_DA_ENCOMENDA { quantidade_total: 8 })
 CREATE (couve_encomenda4)-[:DO_TIPO]->(couve)
 CREATE (couve_encomenda4)-[:PERTENCE { quantidade: 8 }]->(brasnica)
 
-CREATE(arroz_encomenda4:ALIMENTO_DA_ENCOMENDA { quantidade_total: 22 })
+CREATE (arroz_encomenda4:ALIMENTO_DA_ENCOMENDA { quantidade_total: 22 })
 CREATE (arroz_encomenda4)-[:DO_TIPO]->(arroz)
 CREATE (arroz_encomenda4)-[:PERTENCE { quantidade: 22 }]->(copeagro)
 
-CREATE(melao_encomenda4:ALIMENTO_DA_ENCOMENDA { quantidade_total: 34 })
+CREATE (melao_encomenda4:ALIMENTO_DA_ENCOMENDA { quantidade_total: 34 })
 CREATE (melao_encomenda4)-[:DO_TIPO]->(melao)
 CREATE (melao_encomenda4)-[:PERTENCE { quantidade: 30 }]->(seara)
 CREATE (melao_encomenda4)-[:PERTENCE { quantidade: 4 }]->(brasnica)
 
-CREATE(alface_encomenda4:ALIMENTO_DA_ENCOMENDA { quantidade_total: 10 })
+CREATE (alface_encomenda4:ALIMENTO_DA_ENCOMENDA { quantidade_total: 10 })
 CREATE (alface_encomenda4)-[:DO_TIPO]->(alface)
 CREATE (alface_encomenda4)-[:PERTENCE { quantidade: 10 }]->(seara)
 
-CREATE(milho_verde_encomenda5:ALIMENTO_DA_ENCOMENDA { quantidade_total: 80 })
+CREATE (milho_verde_encomenda5:ALIMENTO_DA_ENCOMENDA { quantidade_total: 80 })
 CREATE (milho_verde_encomenda5)-[:DO_TIPO]->(milho_verde)
 CREATE (milho_verde_encomenda5)-[:PERTENCE { quantidade: 60 }]->(brasnica)
 CREATE (milho_verde_encomenda5)-[:PERTENCE { quantidade: 10 }]->(citricola_lucato)
 CREATE (milho_verde_encomenda5)-[:PERTENCE { quantidade: 10 }]->(seara)
 
-CREATE(feijao_encomenda5:ALIMENTO_DA_ENCOMENDA { quantidade_total: 20 })
+CREATE (feijao_encomenda5:ALIMENTO_DA_ENCOMENDA { quantidade_total: 20 })
 CREATE (feijao_encomenda5)-[:DO_TIPO]->(feijao)
 CREATE (feijao_encomenda5)-[:PERTENCE { quantidade: 20 }]->(seara)
 
-CREATE(arroz_encomenda5:ALIMENTO_DA_ENCOMENDA { quantidade_total: 58 })
+CREATE (arroz_encomenda5:ALIMENTO_DA_ENCOMENDA { quantidade_total: 58 })
 CREATE (arroz_encomenda5)-[:DO_TIPO]->(arroz)
 CREATE (arroz_encomenda5)-[:PERTENCE { quantidade: 40 }]->(frutas_real)
 CREATE (arroz_encomenda5)-[:PERTENCE { quantidade: 18 }]->(brasnica)
 
-CREATE(batata_encomenda5:ALIMENTO_DA_ENCOMENDA { quantidade_total: 20 })
+CREATE (batata_encomenda5:ALIMENTO_DA_ENCOMENDA { quantidade_total: 20 })
 CREATE (batata_encomenda5)-[:DO_TIPO]->(batata)
 CREATE (batata_encomenda5)-[:PERTENCE { quantidade: 20 }]->(seara)
 
-CREATE(banana_encomenda5:ALIMENTO_DA_ENCOMENDA { quantidade_total: 120 })
+CREATE (banana_encomenda5:ALIMENTO_DA_ENCOMENDA { quantidade_total: 120 })
 CREATE (banana_encomenda5)-[:DO_TIPO]->(banana)
 CREATE (banana_encomenda5)-[:PERTENCE { quantidade: 100 }]->(citricola_lucato)
 CREATE (banana_encomenda5)-[:PERTENCE { quantidade: 20 }]->(seara)
 
-CREATE(morango_encomenda5:ALIMENTO_DA_ENCOMENDA { quantidade_total: 30 })
+CREATE (morango_encomenda5:ALIMENTO_DA_ENCOMENDA { quantidade_total: 30 })
 CREATE (morango_encomenda5)-[:DO_TIPO]->(morango)
 CREATE (morango_encomenda5)-[:PERTENCE { quantidade: 30 }]->(citricola_lucato)
 
-CREATE(cenoura_encomenda5:ALIMENTO_DA_ENCOMENDA { quantidade_total: 60 })
+CREATE (cenoura_encomenda5:ALIMENTO_DA_ENCOMENDA { quantidade_total: 60 })
 CREATE (cenoura_encomenda5)-[:DO_TIPO]->(cenoura)
 CREATE (cenoura_encomenda5)-[:PERTENCE { quantidade: 60 }]->(brasnica)
 
-CREATE(abacate_encomenda5:ALIMENTO_DA_ENCOMENDA { quantidade_total: 14 })
+CREATE (abacate_encomenda5:ALIMENTO_DA_ENCOMENDA { quantidade_total: 14 })
 CREATE (abacate_encomenda5)-[:DO_TIPO]->(abacate)
 CREATE (abacate_encomenda5)-[:PERTENCE { quantidade: 14 }]->(frutas_real)
 
