@@ -201,14 +201,42 @@ CREATE (associado:ASSOCIADO { nome: '', cpf: '', rg: '', filiacao: '', sexo: '',
 
 
 -- Mensalidade --
-CREATE (mensalidade:MENSALIDADE:NAO_PAGA { vencimento: '' })
+CREATE (mensalidade1_associado1:MENSALIDADE:PAGA { vencimento: '2017-05-20' })
+CREATE (mensalidade2_associado1:MENSALIDADE:PAGA { vencimento: '2017-06-20' })
+CREATE (mensalidade3_associado1:MENSALIDADE:PAGA { vencimento: '2017-07-20' })
+CREATE (mensalidade4_associado1:MENSALIDADE:PAGA { vencimento: '2017-09-20' })
+CREATE (mensalidade5_associado1:MENSALIDADE:PAGA { vencimento: '2017-10-20' })
+CREATE (mensalidade6_associado1:MENSALIDADE:NAO_PAGA { vencimento: '2017-11-20' })
+
+CREATE (mensalidade1_associado2:MENSALIDADE:PAGA { vencimento: '2017-06-16' })
+CREATE (mensalidade2_associado2:MENSALIDADE:PAGA { vencimento: '2017-08-16' })
+CREATE (mensalidade3_associado2:MENSALIDADE:PAGA { vencimento: '2017-09-16' })
+CREATE (mensalidade4_associado2:MENSALIDADE:PAGA { vencimento: '2017-10-16' })
+CREATE (mensalidade5_associado2:MENSALIDADE:NAO_PAGA { vencimento: '2017-11-16' })
+
+CREATE (mensalidade1_associado3:MENSALIDADE:PAGA { vencimento: '2017-08-15' })
+CREATE (mensalidade2_associado3:MENSALIDADE:PAGA { vencimento: '2017-09-15' })
+CREATE (mensalidade3_associado3:MENSALIDADE:PAGA { vencimento: '2017-10-15' })
+CREATE (mensalidade4_associado3:MENSALIDADE:NAO_PAGA { vencimento: '2017-11-15' })
+
+CREATE (mensalidade1_associado4:MENSALIDADE:PAGA { vencimento: '2017-09-10' })
+CREATE (mensalidade2_associado4:MENSALIDADE:PAGA { vencimento: '2017-10-10' })
+CREATE (mensalidade3_associado4:MENSALIDADE:PAGA { vencimento: '2017-11-10' })
 
 
 
 -- Lista de Compra --
-CREATE (lista_de_compra:LISTA_DE_COMPRA:NAO_PAGA {
-  data: ''
-})
+CREATE (lista_de_compra1_associado1:LISTA_DE_COMPRA:PAGA { data: '2017-08-19' })
+CREATE (lista_de_compra2_associado1:LISTA_DE_COMPRA:NAO_PAGA { data: '2017-11-10' })
+
+CREATE (lista_de_compra1_associado2:LISTA_DE_COMPRA:PAGA { data: '2017-09-23' })
+
+CREATE (lista_de_compra1_associado3:LISTA_DE_COMPRA:PAGA { data: '2017-10-02' })
+CREATE (lista_de_compra2_associado3:LISTA_DE_COMPRA:PAGA { data: '2017-10-18' })
+CREATE (lista_de_compra2_associado3:LISTA_DE_COMPRA:PAGA { data: '2017-11-01' })
+
+CREATE (lista_de_compra1_associado4:LISTA_DE_COMPRA:NAO_PAGA { data: '2017-11-07' })
+
 
 
 
@@ -222,10 +250,19 @@ CREATE (citricola_lucato:FORNECEDOR { nome: 'Citricola Lucato', razao_social: 'C
 
 
 -- Encomendas --
-CREATE (encomenda:ENCOMENDA {
-  data: ''
-})
+CREATE (encomenda1_seara:ENCOMENDA { data: '2017-08-20' })
+CREATE (encomenda2_seara:ENCOMENDA { data: '2017-10-20' })
+CREATE (encomenda3_seara:ENCOMENDA { data: '2017-11-10' })
 
+
+CREATE (encomenda1_copeagro:ENCOMENDA { data: '2017-10-10' })
+CREATE (encomenda2_copeagro:ENCOMENDA { data: '2017-10-20' })
+
+CREATE (encomenda1_brasnica:ENCOMENDA { data: '2017-09-25' })
+
+CREATE (encomenda1_frutas_real:ENCOMENDA { data: '2017-11-10' })
+
+CREATE (encomenda1_citricola_lucato:ENCOMENDA { data: '2017-11-10' })
 
 
 
