@@ -55,7 +55,7 @@ CREATE (JardimEuropa:BAIRRO {
 })
 
 -- SC --
-CREATE (Progresso:BAIRRO {
+CREATE (PassoManso:BAIRRO {
   nome: 'Passo Mano'
 })
 
@@ -121,8 +121,48 @@ CREATE (apartamento:TIPO_ENDERECO {
   nome: 'Apartamento'
 })
 
+-- No País --
+CREATE (DistritoFederal)-[NO_PAIS]->(Brasil)
+CREATE (SaoPaulo)-[NO_PAIS]->(Brasil)
+CREATE (SantaCatarina)-[NO_PAIS]->(Brasil)
 
+-- Na UF --
+CREATE (Brasilia)-[NA_UF]->(DistritoFederal)
+CREATE (BragancaPaulista)-[NA_UF]->(SaoPaulo)
+CREATE (Blumenau)-[NA_UF]->(SantaCatarina)
 
+-- Na Cidade --
+-- Brasilia/DF --
+CREATE (Ceilandia)-[NA_CIDADE]->(Brasilia)
+CREATE (Planaltina)-[NA_CIDADE]->(Brasilia)
+-- Braganca Paulista/SP --
+CREATE (CampoNovo)-[NA_CIDADE]->(BragancaPaulista)
+CREATE (JardimEuropa)-[NA_CIDADE]->(BragancaPaulista)
+-- Braganca Paulista/SP --
+CREATE (PassoManso)-[NA_CIDADE]->(Blumenau)
+CREATE (Progresso)-[NA_CIDADE]->(Blumenau)
+
+-- No Bairro --
+-- DF --
+CREATE (EQNOBlocoC)-[NO_BAIRRO]->(Ceilandia)
+CREATE (Quadra13Conjunto7)-[NO_BAIRRO]->(Planaltina)
+-- SP --
+CREATE (PracaManoelRamosdeLima)-[NO_BAIRRO]->(CampoNovo)
+CREATE (AlamedaPolonia)-[NO_BAIRRO]->(JardimEuropa)
+-- SC --
+CREATE (RuaAlbertSchulz)-[NO_BAIRRO]->(PassoManso)
+CREATE (RuaOscarJosePering)-[NO_BAIRRO]->(Progresso)
+
+-- No Endereco --
+-- DF --
+CREATE (Casa)-[NO_ENDERECO]->(EQNOBlocoC)
+CREATE (Casa)-[NO_ENDERECO]->(Quadra13Conjunto7)
+-- SP --
+CREATE (Apartamento)-[NO_ENDERECO]->(PracaManoelRamosdeLima)
+CREATE (Casa)-[NO_ENDERECO]->(AlamedaPolonia)
+-- SC --
+CREATE (Casa)-[NO_ENDERECO]->(RuaAlbertSchulz)
+CREATE (Apartamento)-[NO_ENDERECO]->(RuaOscarJosePering)
 
 -- Telefone --
 -- DF --
@@ -157,9 +197,6 @@ CREATE (telSC2:TELEFONE {
   numero: '83562834',
   ddd: 47
 })
-
-
-
 
 -- Cooperativas --
 CREATE (BomSabor:COOPERATIVA {
@@ -196,7 +233,7 @@ CREATE (melao:ALIMENTO { nome: 'Melão', tipo: 'fruta' })
 
 
 -- Associados --
-CREATE (matheusNicolas:ASSOCIADO {
+CREATE (MatheusNicolas:ASSOCIADO {
   nome: 'Matheus Nicolas Anthony Souza',
   cpf: '98320866987',
   rg: '203466202',
@@ -244,7 +281,25 @@ CREATE (MariaEduarda:ASSOCIADO {
   cargo: 'Estudante'
 })
 
+-- Natural De --
+CREATE (MatheusNicolas)-[:NATURAL_DE]->(Brasilia)
+CREATE (TomasOtavio)-[:NATURAL_DE]->(Blumenau)
+CREATE (SarahFernanda)-[:NATURAL_DE]->(Brasilia)
+CREATE (MariaEduarda)-[:NATURAL_DE]->(BragancaPaulista)
 
+-- Mora em --
+CREATE (MatheusNicolas)-[:MORA_EM]->(EQNOBlocoC)
+CREATE (TomasOtavio)-[:MORA_EM]->(RuaAlbertSchulz)
+CREATE (SarahFernanda)-[:MORA_EM]->(Quadra13Conjunto7)
+CREATE (MariaEduarda)-[:MORA_EM]->(PracaManoelRamosdeLima)
+
+-- Contato --
+CREATE (MatheusNicolas)-[:CONTATO]->(telDF1)
+CREATE (TomasOtavio)-[:CONTATO]->(telSC1)
+CREATE (TomasOtavio)-[:CONTATO]->(telSC2)
+CREATE (SarahFernanda)-[:CONTATO]->(telDF2)
+CREATE (MariaEduarda)-[:CONTATO]->(telSP1)
+CREATE (MariaEduarda)-[:CONTATO]->(telSP2)
 
 -- Mensalidade --
 CREATE (mensalidade1_matheusNicolas:MENSALIDADE:PAGA { vencimento: '2017-05-20' })
@@ -333,19 +388,6 @@ CREATE (nota_fiscal_encomenda2_seara:NOTA_FISCAL:PAGA { vencimento: '2017-10-22'
 CREATE (nota_fiscal_encomenda3_seara:NOTA_FISCAL:PAGA { vencimento: '2017-11-12', valor: 120 })
 CREATE (nota_fiscal_encomenda1_citricola_lucato:NOTA_FISCAL:PAGA { vencimento: '2017-11-12', valor: 450 })
 CREATE (nota_fiscal_encomenda1_frutas_real:NOTA_FISCAL:PAGA { vencimento: '2017-11-12', valor: 380 })
-
-
-
-
-CREATE (endereco)-[NA_RUA]->(rua)
-CREATE (rua)-[NO_BAIRRO]->(bairro)
-CREATE (bairro)-[NA_CIDADE]->(cidade)
-CREATE (cidade)-[NO_ESTADO]->(estado)
-CREATE (estado)-[NO_PAIS]->(pais)
-
-CREATE (associado)-[:NATURAL_DE]->(cidade)
-CREATE (associado)-[:MORA_EM]->(endereco)
-CREATE (associado)-[:CONTATO]->(telefone)
 
 CREATE (associado)-[:REALIZA]->(lista_de_compra)
 
